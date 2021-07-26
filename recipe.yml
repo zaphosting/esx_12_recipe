@@ -1,0 +1,63 @@
+name: ZAPHostingtxESX
+version: v1.0
+author: ZAP-Hosting.com & the ESX Team
+description: An ESX pack with additional bug-fixes, based on esx-legacy.
+
+variables:
+    dbHost: localhost
+    dbUsername: root
+    dbPassword: ""
+    dbName: null
+
+tasks:
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    ref: 0169fdddaa9511558cfa17bcf80a832f56c359ff
+    subpath: resources
+    dest: ./resources
+
+  - action: download_github
+    src: https://github.com/zap-fivem/esx_12_recipe 
+    ref: master
+    dest: ./tmp/zap_esx
+    
+  - action: download_github
+    src: https://github.com/zap-fivem/esx_12
+    ref: master
+    dest: ./tmp/zap_esx/[esx]
+
+  - action: move_path
+    src: ./tmp/zap_esx/server.cfg
+    dest: ./server.cfg
+
+  - action: move_path
+    src: ./tmp/zap_esx/zap96x96.png
+    dest: ./zap96x96.png
+
+  - action: move_path
+    src: ./tmp/zap_esx/[esx]
+    dest: ./resources/[esx]
+
+  - action: connect_database
+  - action: query_database
+    file: ./tmp/zap_esx/esx_final.sql
+
+  # Download basic resources and ESX dependencies
+  - action: download_github
+    src: https://github.com/Blumlaut/EasyAdmin
+    ref: master
+    dest: ./resources/EasyAdmin
+
+  - action: download_github
+    src: https://github.com/brouznouf/fivem-mysql-async
+    ref: master
+    dest: ./resources/mysql-async
+
+  - action: download_github
+    src: https://github.com/Bob74/bob74_ipl
+    ref: master
+    dest: ./resources/bob74_ipl
+    
+  - action: remove_path
+    path: ./tmp
