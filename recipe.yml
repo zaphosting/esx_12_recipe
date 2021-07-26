@@ -17,8 +17,7 @@ tasks:
     
   - action: download_github
     src: https://github.com/zap-fivem/esx_12
-    ref: master
-    dest: ./tmp/zap_esx/[esx]
+    dest: ./resources/[esx]
 
   - action: move_path
     src: ./tmp/zap_esx/server.cfg
@@ -27,10 +26,6 @@ tasks:
   - action: move_path
     src: ./tmp/zap_esx/zap96x96.png
     dest: ./zap96x96.png
-
-  - action: move_path
-    src: ./tmp/zap_esx/[esx]
-    dest: ./resources/[esx]
 
   - action: connect_database
   - action: query_database
