@@ -34,15 +34,15 @@ tasks:
   - action: query_database
     file: ./tmp/zap_esx/esx_final.sql
 
-  # Download basic resources and ESX dependencies
+  # other required resources
   - action: download_github
     src: https://github.com/Blumlaut/EasyAdmin
-    ref: master
+    ref: 5fc0ef6dc3bcadb36ade43f2b5d77b3b60162bc4
     dest: ./resources/EasyAdmin
 
   - action: download_github
     src: https://github.com/brouznouf/fivem-mysql-async
-    ref: master
+    ref: c5fa317a65acfe2eef453257e19e3b4fde137089
     dest: ./resources/mysql-async
 
   - action: download_github
