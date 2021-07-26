@@ -3,12 +3,6 @@ version: v1.0
 author: ZAP-Hosting.com & the ESX Team
 description: An ESX pack with additional bug-fixes, based on esx-legacy.
 
-variables:
-    dbHost: localhost
-    dbUsername: root
-    dbPassword: ""
-    dbName: null
-
 tasks:
   # Download default CFX resources
   - action: download_github
@@ -19,7 +13,6 @@ tasks:
 
   - action: download_github
     src: https://github.com/zap-fivem/esx_12_recipe 
-    ref: master
     dest: ./tmp/zap_esx
     
   - action: download_github

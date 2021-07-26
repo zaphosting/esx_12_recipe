@@ -7,9 +7,6 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 
-DELIMITER $$
-DELIMITER ;
-
 DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE IF NOT EXISTS `accounts` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
