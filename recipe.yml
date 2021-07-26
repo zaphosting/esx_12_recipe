@@ -4,7 +4,7 @@ author: ZAP-Hosting.com & the ESX Team
 description: An ESX pack with additional bug-fixes, based on esx-legacy.
 
 variables:
-  steamApiKey: "none"
+  steam_webApiKey: "none"
 
 tasks:
   # Download default CFX resources
