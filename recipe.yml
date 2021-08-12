@@ -32,7 +32,7 @@ tasks:
 
   - action: connect_database
   - action: query_database
-    file: ./tmp/zap_esx/esx_final.sql
+    file: ./resources/[esx]/esx_final.sql
 
   # other required resources
   - action: download_github
