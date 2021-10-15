@@ -14,6 +14,9 @@ tasks:
     subpath: resources
     dest: ./resources
 
+  - action: ensure_dir
+    path: ./tmp/
+
   - action: download_github
     src: https://github.com/zap-fivem/esx_12_recipe 
     dest: ./tmp/zap_esx
