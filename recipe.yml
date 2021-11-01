@@ -10,7 +10,7 @@ tasks:
   # Download default CFX resources
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data
-    ref: 0169fdddaa9511558cfa17bcf80a832f56c359ff
+    ref: 44fc68d7ee1b94ad67a211a6ff8234ce4ff760c8
     subpath: resources
     dest: ./resources
 
@@ -40,7 +40,7 @@ tasks:
   # other required resources
   - action: download_github
     src: https://github.com/Blumlaut/EasyAdmin
-    ref: 36379b4eb729cb67c0c0532f20e04f6fb1c2b378
+    ref: bd78bbec24ca9e09291379837e2d09946cc13fe7
     dest: ./resources/EasyAdmin
 
   - action: download_github
