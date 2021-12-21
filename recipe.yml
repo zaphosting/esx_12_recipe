@@ -33,6 +33,11 @@ tasks:
     src: ./tmp/zap_esx/zap96x96.png
     dest: ./zap96x96.png
 
+  - action: replace_string
+    file: /resources/[esx]/esx_final.sql
+    search: "es_extended"
+    replace: "{{dbName}}"
+
   - action: connect_database
   - action: query_database
     file: ./resources/[esx]/esx_final.sql
