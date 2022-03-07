@@ -18,11 +18,11 @@ tasks:
     path: ./tmp/
 
   - action: download_github
-    src: https://github.com/zap-fivem/esx_12_recipe 
+    src: https://github.com/zaphosting/esx_12_recipe 
     dest: ./tmp/zap_esx
     
   - action: download_github
-    src: https://github.com/zap-fivem/esx_12
+    src: https://github.com/zaphosting/esx_12
     dest: ./resources/[esx]
 
   - action: move_path
