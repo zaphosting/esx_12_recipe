@@ -45,7 +45,7 @@ tasks:
   # other required resources
   - action: download_github
     src: https://github.com/Blumlaut/EasyAdmin
-    ref: ad774ebd8de60f8423ed520b6f51ae73bd3797b0
+    ref: ddcc0a9839af53de8fbc932f8336fe13fa30fb10
     dest: ./resources/EasyAdmin
 
   - action: download_github
