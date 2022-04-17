@@ -49,11 +49,6 @@ tasks:
     dest: ./resources/EasyAdmin
 
   - action: download_github
-    src: https://github.com/brouznouf/fivem-mysql-async
-    ref: c5fa317a65acfe2eef453257e19e3b4fde137089
-    dest: ./resources/mysql-async
-
-  - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master
     dest: ./resources/bob74_ipl
