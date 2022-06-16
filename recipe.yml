@@ -24,6 +24,7 @@ tasks:
   - action: download_github
     src: https://github.com/zaphosting/esx_12
     dest: ./resources/[esx]
+    ref: 3317fe4e4a9006226904f519f6270e5b823ace30
 
   - action: move_path
     src: ./tmp/zap_esx/server.cfg
